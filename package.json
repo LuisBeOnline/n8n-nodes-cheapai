@@ -1,19 +1,19 @@
 {
-  "name": "n8n-nodes-<...>",
-  "version": "0.1.0",
-  "description": "",
+  "name": "n8n-nodes-cheapai",
+  "version": "0.0.3",
+  "description": "This is a simple node that allows you to insert a custom API Url for AI",
   "keywords": [
     "n8n-community-node-package"
   ],
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://beonline.pt",
   "author": {
-    "name": "",
-    "email": ""
+    "name": "BeOnline",
+    "email": "geral@beonline.pt"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/<...>/n8n-nodes-<...>.git"
+    "url": "https://github.com/LuisBeOnline/n8n-nodes-cheapai"
   },
   "main": "index.js",
   "scripts": {
@@ -30,12 +30,10 @@
   "n8n": {
     "n8nNodesApiVersion": 1,
     "credentials": [
-      "dist/credentials/ExampleCredentialsApi.credentials.js",
-      "dist/credentials/HttpBinApi.credentials.js"
+      "dist/credentials/CheapAiApi.credentials"
     ],
     "nodes": [
-      "dist/nodes/ExampleNode/ExampleNode.node.js",
-      "dist/nodes/HttpBin/HttpBin.node.js"
+      "dist/nodes/CheapAi/CheapAi.node.js"
     ]
   },
   "devDependencies": {
@@ -45,7 +43,7 @@
     "eslint-plugin-n8n-nodes-base": "^1.11.0",
     "gulp": "^4.0.2",
     "n8n-core": "*",
-    "n8n-workflow": "*",
+    "n8n-workflow": "^1.6.0",
     "prettier": "^2.7.1",
     "typescript": "~4.8.4"
   }
