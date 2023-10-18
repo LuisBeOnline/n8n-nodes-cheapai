@@ -14,6 +14,13 @@ export class CheapAiApi implements ICredentialType {
 
 	properties: INodeProperties[] = [
 		{
+			displayName: 'API URL',
+			name: 'apiUrl',
+			type: 'string',
+			default: 'https://api.openai.com/', // Default to OpenAI API URL
+			description: 'Enter your API URL. If left empty, it will default to OpenAI API URL.',
+		},
+		{
 			displayName: 'API Key',
 			name: 'apiKey',
 			type: 'string',
@@ -43,7 +50,7 @@ export class CheapAiApi implements ICredentialType {
 
 	test: ICredentialTestRequest = {
 		request: {
-			baseURL: 'https://api.daku.tech/',
+			baseURL: '={{$credentials.apiUrl}}', // Use the stored API URL credential
 			url: '/v1/models',
 		},
 	};
