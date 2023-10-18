@@ -25,7 +25,7 @@ export class CheapAi implements INodeType {
 		],
 		requestDefaults: {
 			ignoreHttpStatusErrors: true,
-			baseURL: 'https://api.daku.tech/',
+			baseURL: '={{$credentials.apiUrl}}',
 		},
 		properties: [
 			{
