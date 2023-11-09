@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-cheapai",
-  "version": "0.0.6",
+  "version": "0.0.8",
   "description": "This is a simple node that allows you to insert a custom API Url for AI",
   "keywords": [
     "n8n-community-node-package"

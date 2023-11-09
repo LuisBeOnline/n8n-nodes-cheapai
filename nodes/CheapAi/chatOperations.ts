@@ -36,7 +36,7 @@ const completeOperations: INodeProperties[] = [
 		displayName: 'Model',
 		name: 'model',
 		type: 'options',
-		description: 'The model which will generate the completion. <a href="https://beta.openai.com/docs/models/overview">Learn more</a>.',
+		description: 'The model which will generate the completion. 3 <a href="https://beta.openai.com/docs/models/overview">Learn more</a>.',
 		displayOptions: {
 			show: {
 				operation: ['complete'],
@@ -59,15 +59,15 @@ const completeOperations: INodeProperties[] = [
 								},
 							},
 							{
-								type: 'filter',
+							type: 'filter',
 								properties: {
-									pass: "={{ $responseItem.id.startsWith('gpt-') }}",
-								},
+									pass: "={{ $responseItem.id.startsWith('gpt-') || $responseItem.id.startsWith('llama') || $responseItem.id.startsWith('codellama') || $responseItem.id.startsWith('airoboros') || $responseItem.id.startsWith('mistral') || $responseItem.id.startsWith('palm') || $responseItem.id.startsWith('claude') || $responseItem.id.startsWith('qwen') || $responseItem.id.startsWith('starchat') || $responseItem.id.startsWith('cohere') }}"
+								}
 							},
 							{
 								type: 'setKeyValue',
 								properties: {
-									name: '={{$responseItem.ID}}',
+									name: '={{$responseItem.id}}',
 									value: '={{$responseItem.id}}',
 								},
 							},

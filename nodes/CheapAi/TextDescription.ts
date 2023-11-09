@@ -94,7 +94,7 @@ const completeOperations: INodeProperties[] = [
 							{
 								type: 'setKeyValue',
 								properties: {
-									name: '={{$responseItem.ID}}',
+									name: '={{$responseItem.id}}',
 									value: '={{$responseItem.id}}',
 								},
 							},
