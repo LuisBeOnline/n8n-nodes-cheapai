@@ -2,8 +2,10 @@
 
 This is a simple node that allows you to insert a custom API Url for AI
 
-## Status
-Under Development
+## WARNING
+
+⚠️ **This node will be deprecated soon. Please update to AIConnect: https://www.npmjs.com/package/n8n-nodes-aiconnect**
+
 
 ## License
 

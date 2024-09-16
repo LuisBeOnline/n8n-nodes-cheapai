@@ -29,6 +29,17 @@ export class CheapAi implements INodeType {
 		},
 		properties: [
 			{
+				displayName: 'WARNING: This node will be deprecated soon. Please update to AIConnect: https://www.npmjs.com/package/n8n-nodes-aiconnect',
+				name: 'warning',
+				type: 'notice',
+				default: 'This node will be deprecated soon. Please update to AIConnect: https://www.npmjs.com/package/n8n-nodes-aiconnect',
+				displayOptions: {
+					show: {
+						resource: ['chat', 'image', 'text'],
+					},
+				},
+			},
+			{
 				displayName: 'Resource',
 				name: 'resource',
 				type: 'options',
